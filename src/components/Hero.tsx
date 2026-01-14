@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Clock, TreePine, Scissors, CheckCircle } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup-optimized.webp";
 
 const Hero = () => {
   const bullets = [
@@ -78,21 +77,20 @@ const Hero = () => {
 
         {/* Product mockup */}
         <motion.div 
-          className="relative my-8 mx-auto max-w-2xl"
+          className="relative my-8 mx-auto max-w-lg"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <img 
-            src={heroMockup}
-            alt="Moldes de carrinhos de madeira em PDF exibidos em notebook, tablet e celular"
-            className="w-full h-auto rounded-2xl max-w-[665px]"
-            width={665}
-            height={665}
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-          />
+          <div className="glass-card p-4 rounded-2xl overflow-hidden">
+            <img 
+              src="https://i.imgur.com/D9Fb3vZ.png"
+              alt="Moldes de carrinhos de madeira em PDF exibidos em tablet e celular"
+              className="w-full h-auto rounded-lg"
+              loading="eager"
+            />
+            <p className="text-sm text-muted-foreground mt-4">+100 Moldes Digitais em PDF</p>
+          </div>
         </motion.div>
 
         <motion.p 
