@@ -2,15 +2,24 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import carFusca from "@/assets/car-fusca.png";
+import carTruck from "@/assets/car-truck.png";
+import carOpala from "@/assets/car-opala.png";
+import carKombi from "@/assets/car-kombi.png";
+import carPickup from "@/assets/car-pickup.png";
+import carSports from "@/assets/car-sports.png";
+import carCompact from "@/assets/car-compact.png";
+import carKids from "@/assets/car-kids.png";
+
 const products = [
-  { name: "Molde de Fusca", image: "https://i.imgur.com/VeLIUEN.png" },
-  { name: "Molde de Caminhão", image: "https://i.imgur.com/JOWceNv.png" },
-  { name: "Molde de Opala Clássico", image: "https://i.imgur.com/3hu5XZv.png" },
-  { name: "Molde de Kombi", image: "https://i.imgur.com/TrLOuNF.png" },
-  { name: "Molde de Pickup", image: "https://i.imgur.com/tnvZTeb.png" },
-  { name: "Molde de Carro Esportivo", image: "https://i.imgur.com/fp1oZSj.png" },
-  { name: "Molde de Carrinho Compacto", image: "https://i.imgur.com/3Sdl3BH.png" },
-  { name: "Molde de Carrinho Infantil", image: "https://i.imgur.com/i6G4Z1h.png" },
+  { name: "Molde de Fusca", image: carFusca },
+  { name: "Molde de Caminhão", image: carTruck },
+  { name: "Molde de Opala Clássico", image: carOpala },
+  { name: "Molde de Kombi", image: carKombi },
+  { name: "Molde de Pickup", image: carPickup },
+  { name: "Molde de Carro Esportivo", image: carSports },
+  { name: "Molde de Carrinho Compacto", image: carCompact },
+  { name: "Molde de Carrinho Infantil", image: carKids },
 ];
 
 const ProductCarousel = () => {
