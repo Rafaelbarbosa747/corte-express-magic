@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import carFusca from "@/assets/car-fusca.webp";
+import carFusca from "@/assets/car-fusca-optimized.webp";
 import carTruck from "@/assets/car-truck.webp";
-import carOpala from "@/assets/car-opala.webp";
-import carKombi from "@/assets/car-kombi.webp";
+import carOpala from "@/assets/car-opala-optimized.webp";
+import carKombi from "@/assets/car-kombi-optimized.webp";
 import carPickup from "@/assets/car-pickup.webp";
-import carSports from "@/assets/car-sports.webp";
+import carSports from "@/assets/car-sports-optimized.webp";
 import carCompact from "@/assets/car-compact.webp";
 import carKids from "@/assets/car-kids.webp";
 
@@ -112,7 +112,10 @@ const ProductCarousel = () => {
                       src={product.image} 
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width={389}
+                      height={389}
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-center text-foreground">

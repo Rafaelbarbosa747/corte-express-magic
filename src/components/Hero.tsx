@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Clock, TreePine, Scissors, CheckCircle } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.webp";
+import heroMockup from "@/assets/hero-mockup-optimized.webp";
 
 const Hero = () => {
   const bullets = [
@@ -86,8 +86,12 @@ const Hero = () => {
           <img 
             src={heroMockup}
             alt="Moldes de carrinhos de madeira em PDF exibidos em notebook, tablet e celular"
-            className="w-full h-auto rounded-2xl"
+            className="w-full h-auto rounded-2xl max-w-[665px]"
+            width={665}
+            height={665}
             loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
         </motion.div>
 
