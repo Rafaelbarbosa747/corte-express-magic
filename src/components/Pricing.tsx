@@ -13,6 +13,7 @@ const plans = [
       "Suporte por email",
     ],
     cta: "QUERO COMEÇAR AGORA",
+    checkoutUrl: "https://pay.lowify.com.br/checkout?product_id=4ITQCy",
   },
   {
     name: "Plano Completo",
@@ -20,17 +21,25 @@ const plans = [
     popular: true,
     features: [
       "Todos os 100+ moldes de carrinhos",
-      "Todos os bônus inclusos",
+      "Projetos variados de carrinhos",
+      "Arquivos prontos para imprimir e colar direto na madeira",
+      "5 Modelos de Aviões",
+      "5 Modelos de Motos",
+      "Kit Animais Fáceis",
+      "Kit de Moldes de Barcos",
       "Atualizações futuras grátis",
-      "Suporte prioritário",
+      "Suporte Prioritário",
+      "Garantia",
+      "Acesso vitalício",
     ],
     cta: "QUERO O PLANO COMPLETO",
+    checkoutUrl: "https://pay.lowify.com.br/checkout?product_id=rN6ZrT",
   },
 ];
 
 const Pricing = () => {
   return (
-    <section className="py-16 px-4">
+    <section id="ofertas" className="py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.h2 
           className="text-2xl md:text-4xl font-bold text-center mb-4"
@@ -95,8 +104,11 @@ const Pricing = () => {
                 variant={plan.popular ? "cta" : "secondary"} 
                 className="w-full"
                 size="lg"
+                asChild
               >
-                {plan.cta}
+                <a href={plan.checkoutUrl} target="_blank" rel="noopener noreferrer">
+                  {plan.cta}
+                </a>
               </Button>
             </motion.div>
           ))}

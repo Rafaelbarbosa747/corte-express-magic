@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const FinalCTA = () => {
+  const scrollToOffers = () => {
+    const offersSection = document.getElementById('ofertas');
+    if (offersSection) {
+      offersSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background gradient */}
@@ -36,10 +43,10 @@ const FinalCTA = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Button size="lg" variant="secondary" className="px-8">
+          <Button size="lg" variant="secondary" className="px-8" onClick={scrollToOffers}>
             QUERO FAZER MEU CARRINHO HOJE
           </Button>
-          <Button size="lg" variant="cta" className="px-8">
+          <Button size="lg" variant="cta" className="px-8" onClick={scrollToOffers}>
             QUERO O PLANO COMPLETO
           </Button>
         </motion.div>
