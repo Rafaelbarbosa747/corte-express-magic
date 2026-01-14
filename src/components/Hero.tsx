@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Clock, TreePine, Scissors, CheckCircle } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.png";
 
 const Hero = () => {
   const bullets = [
@@ -11,8 +10,33 @@ const Hero = () => {
     { icon: CheckCircle, text: "Ideal para iniciantes e hobbistas ocupados" },
   ];
 
+  const today = new Date().toLocaleDateString('pt-BR', { 
+    day: '2-digit', 
+    month: '2-digit', 
+    year: 'numeric' 
+  });
+
+  const scrollToOffers = () => {
+    const offersSection = document.getElementById('ofertas');
+    if (offersSection) {
+      offersSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-16 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 overflow-hidden">
+      {/* Top ribbon */}
+      <motion.div 
+        className="absolute top-0 left-0 right-0 bg-accent text-accent-foreground py-2 text-center z-20"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <p className="text-sm font-semibold tracking-wide">
+          🔥 OFERTA VÁLIDA SOMENTE HOJE ({today})
+        </p>
+      </motion.div>
+
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-accent/20 via-background to-background" />
       
@@ -40,7 +64,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center pt-8">
         <motion.h1 
           className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6"
           initial={{ opacity: 0, y: 30 }}
@@ -60,7 +84,7 @@ const Hero = () => {
         >
           <div className="glass-card p-4 rounded-2xl overflow-hidden">
             <img 
-              src={heroMockup} 
+              src="https://i.imgur.com/D9Fb3vZ.png"
               alt="Moldes de carrinhos de madeira em PDF exibidos em tablet e celular"
               className="w-full h-auto rounded-lg"
               loading="eager"
@@ -108,7 +132,12 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <Button size="lg" variant="cta" className="w-full sm:w-auto text-base px-10 py-7">
+          <Button 
+            size="lg" 
+            variant="cta" 
+            className="w-full sm:w-auto text-base px-10 py-7"
+            onClick={scrollToOffers}
+          >
             QUERO FAZER MEU CARRINHO HOJE
           </Button>
           <p className="text-xs text-muted-foreground mt-3">
