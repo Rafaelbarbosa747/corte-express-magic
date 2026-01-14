@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import carFusca from "@/assets/car-fusca.png";
-import carTruck from "@/assets/car-truck.png";
-import carOpala from "@/assets/car-opala.png";
-import carKombi from "@/assets/car-kombi.png";
-import carPickup from "@/assets/car-pickup.png";
-import carSports from "@/assets/car-sports.png";
-import carCompact from "@/assets/car-compact.png";
-import carKids from "@/assets/car-kids.png";
+import carFusca from "@/assets/car-fusca.webp";
+import carTruck from "@/assets/car-truck.webp";
+import carOpala from "@/assets/car-opala.webp";
+import carKombi from "@/assets/car-kombi.webp";
+import carPickup from "@/assets/car-pickup.webp";
+import carSports from "@/assets/car-sports.webp";
+import carCompact from "@/assets/car-compact.webp";
+import carKids from "@/assets/car-kids.webp";
 
 const products = [
   { name: "Molde de Fusca", image: carFusca },
