@@ -2,22 +2,22 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import carFusca from "@/assets/car-fusca.webp";
+import carFusca from "@/assets/car-fusca-new.png";
 import carTruck from "@/assets/car-truck.webp";
-import carOpala from "@/assets/car-opala.webp";
-import carKombi from "@/assets/car-kombi.webp";
+import carOpala from "@/assets/car-opala-new.webp";
+import carKombi from "@/assets/car-kombi-new.webp";
 import carPickup from "@/assets/car-pickup.webp";
-import carSports from "@/assets/car-sports.webp";
+import carSports from "@/assets/car-sports-new.webp";
 import carCompact from "@/assets/car-compact.webp";
 import carKids from "@/assets/car-kids.webp";
 
 const products = [
-  { name: "Molde de Fusca", image: carFusca },
-  { name: "Molde de Caminhão", image: carTruck },
-  { name: "Molde de Opala Clássico", image: carOpala },
   { name: "Molde de Kombi", image: carKombi },
-  { name: "Molde de Pickup", image: carPickup },
+  { name: "Molde de Opala Clássico", image: carOpala },
+  { name: "Molde de Fusca", image: carFusca },
   { name: "Molde de Carro Esportivo", image: carSports },
+  { name: "Molde de Caminhão", image: carTruck },
+  { name: "Molde de Pickup", image: carPickup },
   { name: "Molde de Carrinho Compacto", image: carCompact },
   { name: "Molde de Carrinho Infantil", image: carKids },
 ];
