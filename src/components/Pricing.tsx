@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
+import UpsellModal from "./UpsellModal";
 
 const plans = [
   {
@@ -38,6 +40,7 @@ const plans = [
 ];
 
 const Pricing = () => {
+  const [isUpsellOpen, setIsUpsellOpen] = useState(false);
   return (
     <section id="ofertas" className="py-16 px-4">
       <div className="max-w-4xl mx-auto">
@@ -100,20 +103,33 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Button 
-                variant={plan.popular ? "cta" : "secondary"} 
-                className="w-full"
-                size="lg"
-                asChild
-              >
-                <a href={plan.checkoutUrl} target="_blank" rel="noopener noreferrer">
+              {plan.popular ? (
+                <Button 
+                  variant="cta" 
+                  className="w-full"
+                  size="lg"
+                  asChild
+                >
+                  <a href={plan.checkoutUrl} target="_blank" rel="noopener noreferrer">
+                    {plan.cta}
+                  </a>
+                </Button>
+              ) : (
+                <Button 
+                  variant="secondary" 
+                  className="w-full"
+                  size="lg"
+                  onClick={() => setIsUpsellOpen(true)}
+                >
                   {plan.cta}
-                </a>
-              </Button>
+                </Button>
+              )}
             </motion.div>
           ))}
         </div>
       </div>
+
+      <UpsellModal isOpen={isUpsellOpen} onClose={() => setIsUpsellOpen(false)} />
     </section>
   );
 };
