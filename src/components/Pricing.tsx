@@ -35,7 +35,7 @@ const plans = [
       "Acesso vitalício",
     ],
     cta: "QUERO O PLANO COMPLETO",
-    checkoutUrl: "https://pay.lowify.com.br/checkout?product_id=rN6ZrT",
+    checkoutUrl: "https://www.ggcheckout.com/checkout/v2/OFWSbuXrnTkRL9XR1t0C",
   },
 ];
 
