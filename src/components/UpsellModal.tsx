@@ -106,7 +106,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://pay.lowify.com.br/checkout?product_id=Y6dwl2" 
+                    href="https://pay.cakto.com.br/3237eza_738298" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -120,7 +120,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://pay.lowify.com.br/checkout?product_id=4ITQCy" 
+                    href="https://pay.cakto.com.br/86yjayn_738292" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

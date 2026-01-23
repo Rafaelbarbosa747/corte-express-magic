@@ -35,7 +35,7 @@ const plans = [
       "Acesso vitalício",
     ],
     cta: "QUERO O PLANO COMPLETO",
-    checkoutUrl: "https://pay.lowify.com.br/checkout?product_id=rN6ZrT",
+    checkoutUrl: "https://pay.cakto.com.br/3dxhdxb_738297",
   },
 ];
 
