@@ -106,7 +106,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://pay.cakto.com.br/3237eza_738298" 
+                    href="https://www.ggcheckout.com/checkout/v2/hSCYoAY9PYerMEzMqokX" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -120,7 +120,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://pay.cakto.com.br/86yjayn_738292" 
+                    href="https://www.ggcheckout.com/checkout/v2/wuV6zGduwGeHxHIoQc3Y" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

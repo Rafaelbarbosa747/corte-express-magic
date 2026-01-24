@@ -35,7 +35,7 @@ const plans = [
       "Acesso vitalício",
     ],
     cta: "QUERO O PLANO COMPLETO",
-    checkoutUrl: "https://pay.cakto.com.br/3dxhdxb_738297",
+    checkoutUrl: "https://www.ggcheckout.com/checkout/v2/OFWSbuXrnTkRL9XR1t0C",
   },
 ];
 
