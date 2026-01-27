@@ -88,6 +88,8 @@ const Hero = () => {
             alt="Carrinhos de Madeira Prontos em 60 Minutos - Mockup do produto"
             className="w-full h-auto"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </motion.div>
 
