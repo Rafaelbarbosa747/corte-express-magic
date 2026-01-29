@@ -15,7 +15,7 @@ const plans = [
       "Suporte por email",
     ],
     cta: "QUERO COMEÇAR AGORA",
-    checkoutUrl: "https://pay.lowify.com.br/checkout?product_id=4ITQCy",
+    checkoutUrl: "https://www.ggcheckout.com/checkout/v5/wuV6zGduwGeHxHIoQc3Y",
   },
   {
     name: "Plano Completo",
@@ -35,7 +35,7 @@ const plans = [
       "Acesso vitalício",
     ],
     cta: "QUERO O PLANO COMPLETO",
-    checkoutUrl: "https://www.ggcheckout.com/checkout/v2/OFWSbuXrnTkRL9XR1t0C",
+    checkoutUrl: "https://www.ggcheckout.com/checkout/v5/OFWSbuXrnTkRL9XR1t0C",
   },
 ];
 
