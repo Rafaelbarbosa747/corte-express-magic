@@ -106,7 +106,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://www.ggcheckout.com/checkout/v5/hSCYoAY9PYerMEzMqokX" 
+                    href="https://pay.lowify.com.br/checkout?product_id=Y6dwl2" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -120,7 +120,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://www.ggcheckout.com/checkout/v5/wuV6zGduwGeHxHIoQc3Y" 
+                    href="https://pay.lowify.com.br/checkout?product_id=4ITQCy" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
