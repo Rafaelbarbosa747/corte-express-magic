@@ -106,7 +106,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://www.ggcheckout.com/checkout/v5/hSCYoAY9PYerMEzMqokX" 
+                    href="https://pay.wiapy.com/767HOVbAjc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -120,7 +120,7 @@ const UpsellModal = ({ isOpen, onClose }: UpsellModalProps) => {
                   asChild
                 >
                   <a 
-                    href="https://www.ggcheckout.com/checkout/v5/wuV6zGduwGeHxHIoQc3Y" 
+                    href="https://pay.wiapy.com/0fNhAN43sI" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
