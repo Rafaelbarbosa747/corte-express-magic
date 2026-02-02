@@ -15,7 +15,7 @@ const plans = [
       "Suporte por email",
     ],
     cta: "QUERO COMEÇAR AGORA",
-    checkoutUrl: "https://www.ggcheckout.com/checkout/v5/wuV6zGduwGeHxHIoQc3Y",
+    checkoutUrl: "https://pay.wiapy.com/0fNhAN43sI",
   },
   {
     name: "Plano Completo",
@@ -35,7 +35,7 @@ const plans = [
       "Acesso vitalício",
     ],
     cta: "QUERO O PLANO COMPLETO",
-    checkoutUrl: "https://www.ggcheckout.com/checkout/v5/OFWSbuXrnTkRL9XR1t0C",
+    checkoutUrl: "https://pay.wiapy.com/fD1EVrRGa6",
   },
 ];
 
