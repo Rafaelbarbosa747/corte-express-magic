@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 // Lazy load componentes abaixo da dobra
 const TargetAudience = lazy(() => import("@/components/TargetAudience"));
 const Promise = lazy(() => import("@/components/Promise"));
+const MoldShowcase = lazy(() => import("@/components/MoldShowcase"));
 const ProductCarousel = lazy(() => import("@/components/ProductCarousel"));
 const Bonuses = lazy(() => import("@/components/Bonuses"));
 const Pricing = lazy(() => import("@/components/Pricing"));
@@ -32,6 +33,10 @@ const Index = () => {
       
       <Suspense fallback={<SectionFallback />}>
         <Promise />
+      </Suspense>
+      
+      <Suspense fallback={<SectionFallback />}>
+        <MoldShowcase />
       </Suspense>
       
       <Suspense fallback={<SectionFallback />}>
