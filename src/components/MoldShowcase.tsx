@@ -49,7 +49,7 @@ const MoldShowcase = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Veja exatamente o que você recebe
+          Veja uma amostra do que você vai receber
         </motion.h2>
         
         <motion.p 
