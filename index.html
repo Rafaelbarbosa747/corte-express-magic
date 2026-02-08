@@ -59,14 +59,18 @@
       defer
     ></script>
 
-    <!-- Meta Pixel Code - Lazy loaded via JavaScript for performance -->
-    <!-- Facebook Pixel is now loaded after user interaction or page load to improve FCP -->
+    <!-- UTMify Pixel -->
+    <script>
+      window.pixelId = "697825a6126f0f0bea72cbf4";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
   </head>
 
   <body>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=795933506555311&ev=PageView&noscript=1"
-    /></noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
