@@ -1,6 +1,5 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense } from "react";
 import Hero from "@/components/Hero";
-import { initFacebookPixelLazy } from "@/lib/facebookPixel";
 
 // Lazy load componentes abaixo da dobra
 const TargetAudience = lazy(() => import("@/components/TargetAudience"));
@@ -20,10 +19,6 @@ const SectionFallback = () => (
 );
 
 const Index = () => {
-  useEffect(() => {
-    // Inicializa Facebook Pixel com carregamento atrasado
-    initFacebookPixelLazy();
-  }, []);
 
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
