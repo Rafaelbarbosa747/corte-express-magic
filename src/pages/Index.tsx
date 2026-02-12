@@ -3,10 +3,13 @@ import Hero from "@/components/Hero";
 
 // Lazy load componentes abaixo da dobra
 const TargetAudience = lazy(() => import("@/components/TargetAudience"));
+const PracticalBenefits = lazy(() => import("@/components/PracticalBenefits"));
 const Promise = lazy(() => import("@/components/Promise"));
 const MoldShowcase = lazy(() => import("@/components/MoldShowcase"));
 const ProductCarousel = lazy(() => import("@/components/ProductCarousel"));
 const Bonuses = lazy(() => import("@/components/Bonuses"));
+const SocialProof = lazy(() => import("@/components/SocialProof"));
+const PriceAnchoring = lazy(() => import("@/components/PriceAnchoring"));
 const Pricing = lazy(() => import("@/components/Pricing"));
 const Guarantee = lazy(() => import("@/components/Guarantee"));
 const FAQ = lazy(() => import("@/components/FAQ"));
@@ -30,6 +33,10 @@ const Index = () => {
       <Suspense fallback={<SectionFallback />}>
         <TargetAudience />
       </Suspense>
+
+      <Suspense fallback={<SectionFallback />}>
+        <PracticalBenefits />
+      </Suspense>
       
       <Suspense fallback={<SectionFallback />}>
         <Promise />
@@ -45,6 +52,14 @@ const Index = () => {
       
       <Suspense fallback={<SectionFallback />}>
         <Bonuses />
+      </Suspense>
+
+      <Suspense fallback={<SectionFallback />}>
+        <SocialProof />
+      </Suspense>
+
+      <Suspense fallback={<SectionFallback />}>
+        <PriceAnchoring />
       </Suspense>
       
       <Suspense fallback={<SectionFallback />}>
