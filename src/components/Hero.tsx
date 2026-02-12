@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Clock, TreePine, Scissors, CheckCircle } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.webp";
+import heroMockup from "@/assets/hero-mockup-new.webp";
 
 const Hero = () => {
   const bullets = [

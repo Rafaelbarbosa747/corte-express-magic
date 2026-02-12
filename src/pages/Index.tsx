@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 const TargetAudience = lazy(() => import("@/components/TargetAudience"));
 const PracticalBenefits = lazy(() => import("@/components/PracticalBenefits"));
 const Promise = lazy(() => import("@/components/Promise"));
-const MoldShowcase = lazy(() => import("@/components/MoldShowcase"));
+
 const ProductCarousel = lazy(() => import("@/components/ProductCarousel"));
 const Bonuses = lazy(() => import("@/components/Bonuses"));
 const SocialProof = lazy(() => import("@/components/SocialProof"));
@@ -42,9 +42,6 @@ const Index = () => {
         <Promise />
       </Suspense>
       
-      <Suspense fallback={<SectionFallback />}>
-        <MoldShowcase />
-      </Suspense>
       
       <Suspense fallback={<SectionFallback />}>
         <ProductCarousel />
