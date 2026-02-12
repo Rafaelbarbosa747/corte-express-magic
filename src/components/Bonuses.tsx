@@ -2,10 +2,26 @@ import { motion } from "framer-motion";
 import { Gift, Plane, Bike, PawPrint, Ship } from "lucide-react";
 
 const bonuses = [
-  { icon: Plane, title: "5 Modelos de Aviões", subtitle: "em Madeira" },
-  { icon: Bike, title: "5 Modelos de Motos", subtitle: "em Madeira" },
-  { icon: PawPrint, title: "Kit Animais Fáceis", subtitle: "para Tico-Tico" },
-  { icon: Ship, title: "Kit de Moldes de Barcos", subtitle: "em Madeira" },
+  {
+    icon: Plane,
+    title: "5 Modelos de Aviões em Madeira",
+    subtitle: "Moldes simples e rápidos, ideais pra usar retalhos menores. Ótimos pra decoração, presentes infantis ou peças rápidas pra venda.",
+  },
+  {
+    icon: Bike,
+    title: "5 Modelos de Motos em Madeira",
+    subtitle: "Projetos compactos, com menos cortes e encaixes fáceis. Perfeitos pra variar o portfólio sem complicar o processo.",
+  },
+  {
+    icon: PawPrint,
+    title: "Kit Animais Fáceis",
+    subtitle: "Moldes pensados pra execução rápida, mesmo pra quem está começando. Excelente pra fazer com crianças, vender como lembrança ou usar sobras pequenas.",
+  },
+  {
+    icon: Ship,
+    title: "Kit de Moldes de Barcos",
+    subtitle: "Modelos decorativos e simples, que dão um visual bonito sem exigir projetos longos. Ideal pra quem quer algo diferente sem perder tempo.",
+  },
 ];
 
 const Bonuses = () => {
@@ -38,24 +54,28 @@ const Bonuses = () => {
           <span className="text-accent">outros moldes</span> para variar seus projetos
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {bonuses.map((bonus, index) => (
             <motion.div
               key={index}
-              className="glass-card p-5 rounded-xl text-center group hover:border-accent/50 transition-all"
+              className="glass-card p-5 rounded-xl group hover:border-accent/50 transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
             >
-              <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 transition-colors">
-                <bonus.icon className="w-7 h-7 text-accent" />
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition-colors">
+                  <bonus.icon className="w-6 h-6 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-foreground mb-1">
+                    {bonus.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{bonus.subtitle}</p>
+                </div>
               </div>
-              <h3 className="text-sm font-semibold text-foreground mb-1">
-                {bonus.title}
-              </h3>
-              <p className="text-xs text-muted-foreground">{bonus.subtitle}</p>
             </motion.div>
           ))}
         </div>

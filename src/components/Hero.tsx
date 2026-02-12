@@ -72,8 +72,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Comece e termine seu projeto ainda hoje —{" "}
-          <span className="text-accent">finalize seus carrinhos prontos em 60 minutos</span> ou menos!
+          Baixe e imprima os moldes rápidos que os marceneiros usam pra{" "}
+          <span className="text-accent">terminar carrinhos no mesmo dia!</span>
         </motion.h1>
 
         {/* Product mockup */}
