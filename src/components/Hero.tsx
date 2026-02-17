@@ -25,18 +25,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 pt-20 overflow-hidden">
       {/* Top ribbon */}
-      <motion.div 
-        className="absolute top-0 left-0 right-0 bg-accent text-accent-foreground py-2 text-center z-20"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+      <div 
+        className="fixed top-0 left-0 right-0 bg-accent text-accent-foreground py-2 text-center z-50"
       >
         <p className="text-sm font-semibold tracking-wide">
           🔥 OFERTA VÁLIDA SOMENTE HOJE ({today})
         </p>
-      </motion.div>
+      </div>
 
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-accent/20 via-background to-background" />
@@ -72,8 +69,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Baixe e imprima os moldes rápidos que os marceneiros usam pra{" "}
-          <span className="text-accent">terminar carrinhos no mesmo dia!</span>
+          Use esse atalho que poucos marceneiros usam para{" "}
+          <span className="text-accent">terminar carrinhos no mesmo dia</span>
         </motion.h1>
 
         {/* Product mockup */}
@@ -100,9 +97,11 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           Um pack com mais de 100 moldes de carrinhos de madeira prontos pra imprimir e colar, 
-          criados com o método <span className="text-accent font-semibold">Corte Express™</span>, 
-          onde cada modelo é pensado para reduzir peças, eliminar etapas demoradas e permitir 
-          que você comece e termine no mesmo dia.
+          criados com o método <span className="text-accent font-semibold">Corte Express</span>, 
+          que elimina desenho, medidas e etapas inúteis.
+          <br /><br />
+          Por apenas <span className="text-accent font-semibold">R$10</span>, você começa a cortar em minutos 
+          e consegue terminar carrinhos no mesmo dia, usando até sobras de madeira.
         </motion.p>
 
         {/* Bullet points */}
