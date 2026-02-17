@@ -78,8 +78,8 @@ const PurchaseNotifications = () => {
     // Don't schedule on mount (initial delay handles first one)
     if (idRef.current === 0) return;
 
-    // Next notification after 8-14s
-    const nextDelay = 8000 + Math.random() * 6000;
+    // Next notification after 5-8s
+    const nextDelay = 5000 + Math.random() * 3000;
     const nextTimer = setTimeout(() => setCurrent(generate()), nextDelay);
 
     return () => clearTimeout(nextTimer);
