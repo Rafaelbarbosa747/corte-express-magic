@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import Hero from "@/components/Hero";
+import PurchaseNotifications from "@/components/PurchaseNotifications";
 
 // Lazy load componentes abaixo da dobra
 const TargetAudience = lazy(() => import("@/components/TargetAudience"));
@@ -26,6 +27,9 @@ const Index = () => {
 
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
+      {/* Notificações de compra flutuantes */}
+      <PurchaseNotifications />
+      
       {/* Hero é crítico - carrega imediatamente */}
       <Hero />
       
