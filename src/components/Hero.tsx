@@ -69,8 +69,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Use esse atalho que poucos marceneiros usam para{" "}
-          <span className="text-accent">terminar carrinhos no mesmo dia</span>
+          <span className="text-accent">+100 MOLDES</span> ORGANIZADOS PARA TERMINAR SEUS CARRINHOS{" "}
+          <span className="text-accent">5X MAIS RÁPIDO</span> MESMO SENDO{" "}
+          <span className="text-accent">INICIANTE!</span>
         </motion.h1>
 
         {/* Product mockup */}
